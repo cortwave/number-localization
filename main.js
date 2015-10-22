@@ -23,36 +23,54 @@ var toWords = (number, locale) => {
 };
 
 var rankToWords = (number, rank, dictionary) => {
-    var bufNumber = number % 1000;
     var bufResult = [];
-    var plurals = getPlurals(bufNumber);
-    var hundredsDigit = Math.floor(bufNumber/100);
+    var plurals = getPlurals(number);
     var rankName = rankNames[rank];
-    if(hundredsDigit != 0) {
-      bufResult.push(dictionary.hundreds[hundredsDigit]);
-    }
-    bufNumber = bufNumber % 100;
-    if(dictionary.teens && bufNumber > 9 && bufNumber < 20) {
-      bufResult.push(dictionary.teens[bufNumber%10]);
+    addHundreds(bufResult, number, dictionary);
+    if(isTeens(dictionary, number)) {
+        addTeens(bufResult, number, dictionary);
     } else {
-      var tenDigit = Math.floor(bufNumber/10);
-      if(tenDigit != 0) {
-        bufResult.push(dictionary.tens[tenDigit]);
-      }
-      var oneDigit = Math.floor(bufNumber % 10);
-      if(oneDigit != 0) {
-        if(dictionary.sexOfRank != undefined) {
-          bufResult.push(dictionary.ones[dictionary.sexOfRank[rankName]][oneDigit]);
-        } else {
-          bufResult.push(dictionary.ones[oneDigit]);
-        }
-      }
+        addTens(bufResult, number, dictionary);
+        addOnes(bufResult, number, dictionary, rankName);
     }
     if(rankName != "ones") {
-      bufResult.push(dictionary[rankName][plurals]);
+        bufResult.push(dictionary[rankName][plurals]);
     }
     return bufResult.join(" ");
 }
+
+var addHundreds = (bufResult, number, dictionary) => {
+    var hundredsDigit = Math.floor(number % 1000 / 100);
+    if(hundredsDigit != 0) {
+      bufResult.push(dictionary.hundreds[hundredsDigit]);
+    }
+};
+
+var addTeens = (bufResult, number, dictionary) => {
+    bufResult.push(dictionary.teens[number%10]);
+};
+
+var addTens = (bufResult, number, dictionary) => {
+    var tenDigit = Math.floor(number % 100 /10);
+    if(tenDigit != 0) {
+        bufResult.push(dictionary.tens[tenDigit]);
+    }
+};
+
+var addOnes = (bufResult, number, dictionary, rankName) => {
+    var oneDigit = Math.floor(number % 10);
+    if(oneDigit != 0) {
+        if(dictionary.sexOfRank != undefined) {
+            bufResult.push(dictionary.ones[dictionary.sexOfRank[rankName]][oneDigit]);
+        } else {
+            bufResult.push(dictionary.ones[oneDigit]);
+        }
+    }
+};
+
+var isTeens = (dictionary, number) => {
+    return dictionary.teens && number % 100 > 9 && number % 100 < 20;
+};
 
 var getPlurals = (number) => {
     if(number % 10 == 1 && number % 100 != 11) {
