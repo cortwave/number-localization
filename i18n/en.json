@@ -1,0 +1,151 @@
+{
+  "numbers": {
+    "ones": [
+      "zero",
+      "one",
+      "two",
+      "three",
+      "four",
+      "five",
+      "six",
+      "seven",
+      "eight",
+      "nine"
+    ],
+    "teens": [
+      "ten",
+      "eleven",
+      "twelve",
+      "thirteen",
+      "fourteen",
+      "fifteen",
+      "sixteen",
+      "seventeen",
+      "eighteen",
+      "nineteen"
+    ],
+    "tens": [
+      "zero",
+      "ten",
+      "twenty",
+      "thirty",
+      "forty",
+      "fifty",
+      "sixty",
+      "seventy",
+      "eighty",
+      "ninety"
+    ],
+    "hundreds": [
+      "zero",
+      "one hundred",
+      "two hundred",
+      "three hundred",
+      "four hundred",
+      "five hundred",
+      "six hundred",
+      "seven hundred",
+      "eight hundred",
+      "nine hundred"
+    ],
+    "mega": [
+      "ones",
+      "thousand",
+      "million",
+      "billion",
+      "trillion",
+      "quadrillion",
+      "quintillion",
+      "sextillion",
+      "septillion",
+      "octillion",
+      "nonillion",
+      "decillion",
+      "undecillion",
+      "duodecillion",
+      "tredecillion",
+      "quattuordecillion"
+    ],
+    "ordinal": {
+      "ones": [
+        "zeroth",
+        "first",
+        "second",
+        "third",
+        "fourth",
+        "fifth",
+        "sixth",
+        "seventh",
+        "eighth",
+        "ninth"
+      ],
+      "teens": [
+        "tenth",
+        "eleventh",
+        "twelfth",
+        "thirteenth",
+        "fourteenth",
+        "fifteenth",
+        "sixteenth",
+        "seventeenth",
+        "eighteenth",
+        "nineteenth"
+      ],
+      "tens": [
+        "zeroth",
+        "tenth",
+        "twentieth",
+        "thirtieth",
+        "fortieth",
+        "fiftieth",
+        "sixtieth",
+        "seventieth",
+        "eightieth",
+        "ninetieth"
+      ],
+      "mega": [
+        "zeroth",
+        "thousandth",
+        "millionth",
+        "billionth",
+        "trillionth",
+        "quadrillionth",
+        "quintillionth",
+        "sextillionth",
+        "septillionth",
+        "octillionth",
+        "nonillionth",
+        "decillionth",
+        "undecillionth",
+        "duodecillionth",
+        "tredecillionth",
+        "quattuordecillionth"
+      ]
+    },
+    "tenths": {
+      "one": "tenth",
+      "other": "tenths"
+    },
+    "thousands": {
+      "one": "thousand",
+      "few": "thousand",
+      "many": "thousand"
+    },
+    "millions": {
+      "one": "million",
+      "few": "million",
+      "many": "million"
+    },
+    "billions": {
+      "one": "billion",
+      "few": "billion",
+      "many": "billion"
+    },
+    "trillions": {
+      "one": "trillion",
+      "few": "trillion",
+      "many": "trillion"
+    },
+    "union": "and"
+  }
+}
