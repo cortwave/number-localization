@@ -1,0 +1,24 @@
+{
+  "name": "number-localization",
+  "version": "1.0.0",
+  "description": "Library for localizing numbers to string",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DmitryPranchuk/number-localization.git"
+  },
+  "keywords": [
+    "numbers",
+    "localization",
+    "words"
+  ],
+  "author": "Dmitry Pranchuk <d.pranchuk@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DmitryPranchuk/number-localization/issues"
+  },
+  "homepage": "https://github.com/DmitryPranchuk/number-localization#readme"
+}

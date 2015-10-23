@@ -1,4 +1,4 @@
-var main = require('../main.js');
+var main = require('../index.js');
 var fs = require('fs');
 
 function readLines(input, func, locale) {
