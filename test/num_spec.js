@@ -1,4 +1,4 @@
-var main = require('../index.js');
+var toWords = require('../index.js');
 var fs = require('fs');
 
 function readLines(input, func, locale) {
@@ -25,7 +25,7 @@ function readLines(input, func, locale) {
 function compareNumbers(data, locale) {
   var num = data.split(":")[0];
   var numInWords = data.split(":")[1];
-  var result = main.toWords(num, locale);
+  var result = toWords(num, locale);
   if(result.replace(/ /g, '').replace(/-/g, '').replace(/\r/g, '') !== numInWords.replace(/ /g, '').replace(/-/g, '').replace(/\r/g, '')) {
     console.log(num);
     console.log("expected:" + numInWords + "\n" + "result:  " + result);
