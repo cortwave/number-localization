@@ -10,16 +10,12 @@ Examples of using:
 <pre>
   <code>toWords = require('number-localization')</code>
   <code>toWords(123456, "ru")</code>
-</pre><br/>
-result:<br/>
-<code> сто двадцать три тысячи четыреста пятьдесят шесть </code>
-
+  <code> >> сто двадцать три тысячи четыреста пятьдесят шесть </code>
+</pre>
 <pre>
   <code>toWords = require('number-localization')</code>
   <code>toWords(196073226113, "en")</code>
-</pre><br/>
-result:<br/>
-<code> one hundred ninety six billion seventy three million two hundred twenty six thousand one hundred thirteen  </code>
-
+  <code> >> one hundred ninety six billion seventy three million two hundred twenty six thousand one hundred thirteen  </code>
+</pre>
 
 Supported locales: "ru", "en", "lv"
