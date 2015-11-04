@@ -8,14 +8,14 @@ To install launch:
 Examples of using:
 <br/>
 <code>
-toWords = require('number-localization') /n
+toWords = require('number-localization') \n
 toWords(123456, "ru")
 </code><br/>
 result:<br/>
 <code> сто двадцать три тысячи четыреста пятьдесят шесть </code>
 
 <code>
-toWords = require('number-localization') /n
+toWords = require('number-localization') \n
 toWords(196073226113, "en")
 </code><br/>
 result:<br/>
