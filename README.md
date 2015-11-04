@@ -19,7 +19,7 @@ toWords = require('number-localization')
 toWords(196073226113, "en")
 </code>
 result:<br/>
-<code> :one hundred ninety six billion seventy three million two hundred twenty six thousand one hundred thirteen  </code>
+<code> one hundred ninety six billion seventy three million two hundred twenty six thousand one hundred thirteen  </code>
 
 
 Supported locales: "ru", "en", "lv"
