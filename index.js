@@ -9,17 +9,15 @@ const contains = (arr, obj) => {
     return false;
 };
 
-let i18n = {};
-
-const loadLang = (locale) => {
-    const lang = require('./i18n/' + locale + '.json');
-    i18n[locale] = lang;
+const i18n = {
+    ru: require('./i18n/ru.json'),
+    en: require('./i18n/en.json'),
+    lv: require('./i18n/lv.json'),
 };
 
 const rankNames = ["ones", "thousands", "millions", "billions", "trillions"];
 
 const toWords = (number, locale) => {
-    loadLang(locale);
     const dictionary = i18n[locale].numbers;
     let result = [];
     let rank = 0;
