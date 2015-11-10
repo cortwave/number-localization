@@ -1,6 +1,6 @@
 {
   "name": "number-localization",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Library for localizing numbers to string",
   "main": "index-compiled.js",
   "scripts": {
