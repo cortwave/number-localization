@@ -2,9 +2,10 @@
   "name": "number-localization",
   "version": "1.0.6",
   "description": "Library for localizing numbers to string",
-  "main": "index.js",
+  "main": "index-compiled.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node test/num_spec.js",
+    "postinstall": "babel index.js --out-file index-compiled.js"
   },
   "repository": {
     "type": "git",
@@ -20,5 +21,9 @@
   "bugs": {
     "url": "https://github.com/DmitryPranchuk/number-localization/issues"
   },
-  "homepage": "https://github.com/DmitryPranchuk/number-localization#readme"
+  "homepage": "https://github.com/DmitryPranchuk/number-localization#readme",
+  "dependencies": {
+    "babel-cli": "6.1.2",
+    "babel-preset-es2015": "^6.1.2"
+  }
 }

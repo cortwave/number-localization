@@ -12,7 +12,7 @@ const contains = (arr, obj) => {
 const i18n = {
     ru: require('./i18n/ru.json'),
     en: require('./i18n/en.json'),
-    lv: require('./i18n/lv.json'),
+    lv: require('./i18n/lv.json')
 };
 
 const rankNames = ["ones", "thousands", "millions", "billions", "trillions"];

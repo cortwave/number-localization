@@ -33,6 +33,6 @@ function compareNumbers(data, locale) {
 }
 
 ["ru", "lv", "en"].forEach((locale) => {
-  var input = fs.createReadStream(locale + ".txt");
+  var input = fs.createReadStream("test/" + locale + ".txt");
   readLines(input, compareNumbers, locale);
 });
