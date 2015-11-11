@@ -5,7 +5,7 @@
   "main": "index-compiled.js",
   "scripts": {
     "test": "node test/num_spec.js",
-    "postinstall": "babel index.js --out-file index-compiled.js"
+    "build": "babel index.js --out-file index-compiled.js"
   },
   "repository": {
     "type": "git",
@@ -22,7 +22,7 @@
     "url": "https://github.com/DmitryPranchuk/number-localization/issues"
   },
   "homepage": "https://github.com/DmitryPranchuk/number-localization#readme",
-  "dependencies": {
+  "devDependencies": {
     "babel-cli": "6.1.2",
     "babel-preset-es2015": "^6.1.2"
   }
