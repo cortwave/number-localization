@@ -7,4 +7,4 @@ node_js:
 
 script:
     # ensure no output
-    - [ -z "$( node test/num_spec.js )" ]
+    - "[ -z \"$( node test/num_spec.js )\" ]"
