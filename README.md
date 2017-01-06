@@ -1,6 +1,7 @@
+# Number localization
+
 [![Build Status](https://travis-ci.org/cortwave/number-localization.svg?branch=master)](https://travis-ci.org/cortwave/number-localization)
 
-# number-localization
 Library for localizing numbers
 
 To install launch:
