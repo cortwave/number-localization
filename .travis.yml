@@ -1,4 +1,4 @@
-isudo: required
+sudo: required
 dist: trusty
 
 language: node_js
